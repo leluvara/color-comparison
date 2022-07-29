@@ -1,0 +1,42 @@
+body {
+	background-color: black;
+	color: white;
+	font-size: 16px;
+	font-family: system-ui;
+	margin: 0;
+}
+
+#app {
+	gap: 1px;
+	inline-size: 600px;
+	block-size: 600px;
+	display: grid;
+	grid-template-columns: repeat(var(--items), 1fr);
+}
+
+#app > div:first-child {
+	grid-column: span var(--items);
+}
+
+#app > div {
+	padding: 0.2em;
+	background-color: var(--colorjs-lch-6);
+	text-align: center;
+	display: grid;
+	place-items: center;
+}
+
+#app > .test {
+	background-color: var(--test);
+	text-shadow: 0.08em 0.08em rgb(0 0 0 / 25%);
+}
+
+#app > .end {
+	padding-inline-end: 0.75em;
+	place-items: center end;
+}
+
+#app > .tab {
+	font-variant-numeric: tabular-nums;
+	background-color: var(--colorjs-lch-4);
+}
