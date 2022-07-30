@@ -20,7 +20,7 @@ body {
 
 #app > div {
 	padding: 0.2em;
-	background-color: var(--colorjs-lch-6);
+	background-color: rgb(63, 63, 63);
 	text-align: center;
 	display: grid;
 	place-items: center;
@@ -38,5 +38,5 @@ body {
 
 #app > .tab {
 	font-variant-numeric: tabular-nums;
-	background-color: var(--colorjs-lch-4);
+	background-color: rgb(63, 63, 63);
 }

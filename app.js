@@ -77,7 +77,7 @@ const style = async () => {
 			let value
 
 			if (tokens[0] === 'colorjs') {
-				value = color.toString()
+				value = color.clone().toGamut({space: "p3", method: "oklch.c"}).to("p3").toString()
 			} else {
 				value = color.to(tokens[1]).toString()
 			}
